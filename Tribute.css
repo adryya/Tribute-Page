@@ -1,0 +1,138 @@
+/* Resetare stiluri implicite */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizare pentru întregul document */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Stilizare pentru containerul principal */
+
+.container {
+    max-width: 800px;
+    margin:0 auto ;
+    padding: 20px;
+}
+
+/* Stilizare pentru antet */
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    
+}
+
+/* Stilizare pentru secțiuni */
+
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.section p {
+    margin-top: 10px;
+}
+
+.section img {
+    max-width: 60%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+  .image-container {
+    display: flex;                                       /* Utilizarea flexbox pentru a alinia elementele pe rânduri */
+    flex-wrap: wrap;                                     /* Permiterea înfășurării elementelor pe mai multe rânduri */
+    gap: 2px;                                           /* Spațiu între imaginile afișate */
+  }
+  
+  /* Stilizare pentru fiecare element <figure> (imagine cu descriere) */
+  .image-container figure {
+
+    text-align: center;                                      /* Alinearea centrului pentru imagine și descriere */
+    background-color: #f6f1f1;                               /* Culoare de fundal a fiecărui element <figure> */
+    padding: 1px;                                           /* Padding intern pentru a separa conținutul de margine */
+    border-radius: 8px;                                          /* Colțuri rotunjite pentru un aspect plăcut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);           /* Umbră subtilă pentru efect vizual */
+    transition: transform 0.3s ease;                            /*Tranziție fluidă pentru efectul de hover */
+
+  }
+  
+/* Stilizare pentru subsol */
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+}
+
+footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
