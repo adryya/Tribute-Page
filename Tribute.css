@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizare pentru întregul document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Stilizare pentru containerul principal */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stilizare pentru antet */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Stilizare pentru secțiuni */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1px;
+    text-align: center; /* Aliniaza textul la centru */
+}
+
+.section p {
+    margin-top: 10px;
+}
+p::first-letter {
+    text-transform: uppercase; /* Transformă prima literă a paragrafului în majusculă */
+}
+
+.section img {
+    max-width: 60%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.image-container figure {
+    text-align: center;
+    background-color: #f6f1f1;
+    padding: 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Stilizare pentru subsol */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adaugă un spațiu mic între paragraf și buton */
+   
+}
+
+footer button:hover {
+    background-color: #0056b3;
+}
